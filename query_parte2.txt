@@ -37,3 +37,11 @@ WHERE degrees.level = 'Magistrale'
 AND departments.name = 'Dipartimento di Neuroscienze'
 
 terza query:
+SELECT * 
+FROM `course_teacher` 
+JOIN teachers
+ON teachers.id = course_teacher.teacher_id
+WHERE teachers.id = '44'
+
+quarta query:
+
