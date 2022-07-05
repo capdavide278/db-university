@@ -38,3 +38,5 @@ ottava query:
 SELECT COUNT(id) 
 FROM `teachers` 
 WHERE `phone` IS NULL;
+
+

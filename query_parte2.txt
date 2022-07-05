@@ -1,0 +1,4 @@
+prima query:
+SELECT COUNT(id) 
+FROM students 
+GROUP BY YEAR (enrolment_date);
