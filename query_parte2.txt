@@ -21,8 +21,19 @@ GROUP BY department_id
 ---------------------------------------
 query sulle join:
 
+prima query:
 SELECT students.name, students.surname, degrees.name
 FROM `students` 
 JOIN degrees
 ON students.degree_id = degrees.id
 WHERE degrees.name = 'Corso di Laurea in Economia'
+
+seconda query:
+SELECT * 
+FROM `degrees` 
+JOIN departments
+ON departments.id = degrees.department_id
+WHERE degrees.level = 'Magistrale'
+AND departments.name = 'Dipartimento di Neuroscienze'
+
+terza query:
