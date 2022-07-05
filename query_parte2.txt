@@ -52,4 +52,12 @@ JOIN departments
 ON degrees.department_id = departments.id 
 ORDER BY students.surname, students.name ASC;
 
-quinta:
+quinta query:
+SELECT * 
+FROM `degrees` 
+JOIN courses
+ON degrees.id = courses.degree_id
+JOIN course_teacher
+ON courses.id = course_teacher.course_id
+JOIN teachers
+ON teachers.id = course_teacher.teacher_id
