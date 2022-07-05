@@ -44,4 +44,12 @@ ON teachers.id = course_teacher.teacher_id
 WHERE teachers.id = '44'
 
 quarta query:
+SELECT * 
+FROM students 
+JOIN degrees 
+ON degrees.id = students.degree_id 
+JOIN departments 
+ON degrees.department_id = departments.id 
+ORDER BY students.surname, students.name ASC;
 
+quinta:
