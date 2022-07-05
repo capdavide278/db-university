@@ -7,3 +7,15 @@ seconda query:
 SELECT COUNT(id), `office_address`
 FROM `teachers`
 GROUP BY `office_address`;
+
+terza query:
+SELECT AVG(vote), exam_id 
+FROM exam_student 
+GROUP BY (exam_id);
+
+quarta query:
+SELECT COUNT(id),department_id 
+FROM degrees 
+GROUP BY department_id
+
+query sulle join
