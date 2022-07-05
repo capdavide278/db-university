@@ -18,4 +18,11 @@ SELECT COUNT(id),department_id
 FROM degrees 
 GROUP BY department_id
 
-query sulle join
+---------------------------------------
+query sulle join:
+
+SELECT students.name, students.surname, degrees.name
+FROM `students` 
+JOIN degrees
+ON students.degree_id = degrees.id
+WHERE degrees.name = 'Corso di Laurea in Economia'
